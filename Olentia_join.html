@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!--jQuery 연결 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!--jQueryUi 연결 -->
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="./slick-1.8.1/slick/slick.css">
+    <title>Olentia</title>
+    <link rel="stylesheet" href="./css/Olentia_join.css">
+</head>
+<body>
+    <div id="wrap">
+        <header id="header">
+            <div class="headerIn">
+                <div class="gnbBg"></div>
+                <h1>
+                    <a href="http://127.0.0.1:5500/index.html"><img src="./img/new_logo.png" alt="new logo" class="header_logo"></a>
+                </h1>
+                <nav class="gnb">
+                    <div class="gnbIn">
+                        <ul class="gnb1">
+                            <li><a href="#"><span>All</span></a></li>
+                            <li><a href="#"><span>Sleeping</span></a></li>
+                            <li><a href="#"><span>Living</span></a></li>
+                            <li><a href="#"><span>Phytoncide</span></a></li>
+                            <li><a href="#"><span>Car</span></a></li>
+                            <li class="Community">
+                                <a href="#"><span>Community</span></a>
+                                <div class="community_sub sub">
+                                    <div>
+                                        <p><a href="#">공지사항 </a></p>
+                                        <p><a href="#">자유게시판</a></p>
+                                        <p><a href="#">1:1 문의</a></p>
+                                        <p><a href="#">고객센터</a></p>
+                                    </div>
+                                </div>
+                            </li> <!--Community-->
+                        </ul>
+                    </div>
+                </nav> <!--.gnb-->
+                <ul class="guide">
+                    <li><a href="http://127.0.0.1:5500/Olentia_login.html"><span>로그인</span></a></li>
+                    <li><a href="http://127.0.0.1:5500/Olentia_join.html"><span>회원가입</span></a></li>
+                    <li><a href="#"><span>마이페이지</span></a></li>
+                    <li>
+                        <a href="#"><span>SEARCH</span><img src="./img/h_search.png" alt="검색하기"></a>
+                    </li>
+                </ul>
+            </div> <!--.headerIn-->
+        </header> <!--#header-->
+        <div id="container">
+            <div class="bg_section">
+                <div class="section" id="section1">
+                    <div id="bg_video">
+                        <p class="bg_black"></p>
+                        <video src="./video/flower_main.mp4" muted autoplay loop></video>
+                    </div> <!--#bg_video-->
+                    <div class="join_title" data-aos="fade-on" data-aos-duration="1500">
+                        <h1>Olentia</h1>
+                    </div>
+                    <p class="sub_title" data-aos="fade-on" data-aos-duration="1500">회원가입</p>
+                    <div class="join_form" data-aos="fade-on" data-aos-duration="1500">
+                        <form action="#" class="form" name="form" method="post" onsubmit="return checkAll()">
+                            <input type="text" name="userId" class="text-field" placeholder="아이디">
+                            <input type="password" name="password1" class="text-field" placeholder="비밀번호">
+                            <input type="password" name="password2" class="text-field" placeholder="비밀번호 확인">
+                            <input type="text" name="name" class="text-field" placeholder="이름">
+                            <input type="text" name="email" class="text-field" placeholder="이메일">
+                            <div class="">
+                                <div id="bir_wrap">
+                                    <!-- BIRTH_YY -->
+                                    <div id="bir_yyMMdd">
+                                        <span class="box">
+                                            <input type="text" id="yyMMdd" class="int text-field" maxlength="10" placeholder="생년월일 (0000-00-00)" name="bir_yyMMdd">
+                                        </span>
+                                    </div>
+                                <!--                                     
+                                    <div id="bir_MM" >
+                                        <span class="box">
+                                            <input type="text" id="MM" class="int text-field" maxlength="2" placeholder="월" name="bir_MM">
+                                        </span>
+                                    </div>
+                                    
+                                    <div id="bir_dd" >
+                                        <span class="box">
+                                            <input type="text" id="dd" class="int text-field" maxlength="2" placeholder="일" name="bir_dd">
+                                        </span>
+                                    </div> -->
+                                </div>
+                                <span class="error_next_box"></span>
+                            </div>
+                            <input type="submit" value="가입하기" name="login" class="submit_btn">
+                        </form>
+                    </div>
+                    <div class="sec_guide" data-aos="fade-on" data-aos-duration="1500">
+                        <p>이미 계정이 있습니까? <a href="http://127.0.0.1:5500/Olentia_login.html">로그인 하기</a></p>
+                    </div>
+                </div> <!--.section1-->
+        </div> <!--#container-->
+        <footer id="footer">
+            <div class="footerIn">
+                <div class="Info">
+                    <h3>Info</h3>
+                    <ul>
+                        <li><p><a href="#">브랜드소개</a></p></li>
+                        <li><p><a href="#">창업안내</a></p></li>
+                        <li><p><a href="#">거래희망사전등록</a></p></li>
+                        <li><p><a href="#">윤리신고센터</a></p></li>
+                        <li><p><a href="#">채용</a></p></li>
+                    </ul>
+                </div>
+                <div class="Contact_Us">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li><p><a href="#">고객센터</a></p></li>
+                        <li><p><a href="#">010-2943-6163</a></p></li>
+                        <li class="point"><p>평일 09:00 - 17:00 (점심 12:00 - 13:00)</p></li>
+                        <li><p><a href="#">고객칭찬</a></p></li>
+                    </ul>
+                </div>     
+                <div class="Notice">     
+                    <div class="NoticeIn">         
+                        <ul>   
+                            <li><h3>Notice</h3></li>
+                            <li><span class="more"><a href="">SHOW MORE</a></span></li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">[공지사항] 올렌티아의 상생누리</a>
+                            <span>2021-12-10</span>
+                        </li>
+                        <li>
+                            <a href="#">[공지사항] 새로운 거리두기 4단계적용</a>
+                            <span>2021-07-14</span>
+                        </li>
+                        <li>
+                            <a href="#">[공지사항] 올렌티아 매장내 방역수칙</a>
+                            <span>2021-07-02</span>
+                        </li>
+                        <li>
+                            <a href="#">[공지사항] 신종 코로나 바이러스 예방 안내</a>
+                            <span>2020-02-03</span>
+                        </li>
+                        <li>
+                            <a href="#">[공지사항] 2020년 1월 1일 통신사 제휴 변경 안내</a>
+                            <span>2020-01-08</span>
+                        </li>
+                </div>
+                <div class="ft_right">
+                    <div class="ft_sns">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li class="ft_yt"><a href="#">유튜브</a></li>
+                            <li class="ft_ins"><a href="#">인스타그램</a></li>
+                            <li class="ft_fb"><a href="#">페이스북</a></li>
+                        </ul>
+                    </div>
+                    <div class="bs">
+                        <p><a href="#">Brand Sites</a></p>
+                        <span class="ft_bs"><a href="#">line</a></span>
+                    </div>
+                </div>
+                <div class="ft_bt">
+                    <ul>
+                        <li><a href="#">이용약관</a></li>
+                        <li class="on"><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                        <li><a href="#">영상정보처리기기운영관리방침</a></li>
+                    </ul>
+                    <p>All Rights Reserved © Olentia CO., LTD. 울산광역시 중구 성안동 (주) 올렌티아</p>
+                </div>
+                <a href="#" class="top"></a>
+            </div> <!--.footerIn-->
+        </footer> <!--.footer-->
+    </div> <!--#wrap-->
+</body>
+<script src="js/Olentia_join.js"></script>
+</html>
