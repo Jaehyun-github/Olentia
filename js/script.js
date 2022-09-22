@@ -141,8 +141,10 @@ $(function() {
     $(window).scroll(function() {
         if ($(this).scrollTop() > 3876) {
             $('.sidebar').fadeOut();
+            $('#header').fadeOut();    
         } else{
             $('.sidebar').fadeIn();
+            $('#header').fadeIn(); 
         }
         
     })
