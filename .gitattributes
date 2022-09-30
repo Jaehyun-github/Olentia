@@ -1,4 +1,4 @@
-*.Ruby linguist-detectable=false
-*.SCSS linguist-detectable=false
-*.Less linguist-detectable=false
-*.Makefile linguist-detectable=false
+slick-1.8.1/** .Ruby linguist-detectable=false
+slick-1.8.1/** .SCSS linguist-detectable=false
+slick-1.8.1/** .Less linguist-detectable=false
+slick-1.8.1/** .Makefile linguist-detectable=false
