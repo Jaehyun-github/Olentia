@@ -2,7 +2,7 @@ https://jaehyun-github.github.io/Olentia/
 <br>
 <br>
   ** 제작한 페이지 : 메인 / 로그인 / 회원가입 / SLEEPING 상세페이지 ** <br><br>
-  ** 메인 화면에서 로그인, 회원가입 버튼을 누르면 서브 페이지로 이동 합니다. ** <br><br>
+  ** 메인 페이지에서 로그인, 회원가입 버튼을 누르면 서브 페이지로 이동 합니다. ** <br><br>
 
 Olentia
   
